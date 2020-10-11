@@ -105,5 +105,7 @@ class FormController extends Controller
     {
         $form = $this->form->find($form);
         $form->delete();
+        
+         return redirect()->route('home');
     }
 }
